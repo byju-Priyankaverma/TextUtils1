@@ -6,6 +6,8 @@ import TextForm from "./components/TextForm";
 import About1 from "./components/About1";
 import { useState } from "react";
 import Alert from "./components/Alert";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -61,6 +63,12 @@ function App() {
           <Route path="/about">
           <About1 mode={mode}/>
             {/* <About /> */}
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signup">
+          <Signup />
           </Route>
           <Route path="/">
           <TextForm
